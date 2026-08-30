@@ -1,0 +1,8 @@
+{
+  "name": "int-who-icd10",
+  "private": true,
+  "description": "ICD-10 code grammar/validator, chapter boundaries, dagger/asterisk convention, comparison, and ClaML release-format parser -- no WHO classification content, in portable .cljc",
+  "scripts": {
+    "test:cljs": "nbb --classpath \"$(clojure -A:cljs -Spath)\" scripts/verify-cljs.cljs"
+  }
+}
