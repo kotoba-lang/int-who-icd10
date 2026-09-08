@@ -4,7 +4,12 @@
 ;; do not touch it. Pin is kotoba-lang/xml's `main` HEAD as of this repo's
 ;; creation, verified reachable via `gh api repos/kotoba-lang/xml/commits/HEAD`.
 {:paths ["src"]
- :deps {io.github.kotoba-lang/xml
+ :deps {
+        ;; kotoba.lang.text, not clojure.string. Pinned as an explicit floor:
+        ;; tools.deps takes the NEWEST sha it is shown, so without a floor here
+        ;; this repo silently rides whatever a sibling happens to name.
+        io.github.kotoba-lang/text {:git/sha "73bdb13ae7a3d004b44bca08be03a3191157a38f"}
+       io.github.kotoba-lang/xml
         {:git/url "https://github.com/kotoba-lang/xml.git"
          :git/sha "86f4b9cb9bbc48e823b6f9ef2981da78a525505b"}}
  :aliases
