@@ -16,7 +16,7 @@
   a caller (and this repo's own negative tests) can tell a bad LETTER
   apart from a bad DIGIT apart from a too-long SUBCATEGORY, each as its own
   named `:icd10/...` reason."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ---------------------------------------------------------------------
 ;; character classification
