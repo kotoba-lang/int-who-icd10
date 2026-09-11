@@ -9,7 +9,7 @@
 ;; workspace's CLAUDE.md flags as having repeatedly diverged between JVM
 ;; and ClojureScript in past libraries here.
 ;;
-;;   nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljs
+;;   nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljk
 (ns verify-cljs
   (:require [clojure.test :as t]
             [icd10.code-test]

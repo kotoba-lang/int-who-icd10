@@ -44,7 +44,7 @@ What IS here, and exactly why each piece is legitimate:
   individual codes cited as syntax examples are not the classification.
   Where a fixture needed example *label text* (the ClaML round-trip test),
   that text is explicitly fictional/placeholder (`"Example condition A"`),
-  never real WHO wording — see `test/icd10/claml_test.cljc`'s own comment.
+  never real WHO wording — see `test/icd10/claml_test.cljk`'s own comment.
 - **If a useful ICD-10 library could not be built within this boundary,
   the right move would have been to say so and ship less.** It could —
   code-shape validation, chapter navigation, and a release-format parser
@@ -142,10 +142,10 @@ ICD-11's own (CC-licensed) foundation content, not folded in here.
 
 ## Test vectors
 
-`test/icd10/code_test.cljc`, `chapters_test.cljc`, and `compare_test.cljc`
+`test/icd10/code_test.cljk`, `chapters_test.cljc`, and `compare_test.cljc`
 use individual code strings (`J18.9`, `E11.9`, `A00`, `B20`, `G63.2*`,
 `U07.1`, ...) as syntax examples — the same kind of citation this repo's
-own brief explicitly permits. `test/icd10/claml_test.cljc`'s fixture is
+own brief explicitly permits. `test/icd10/claml_test.cljk`'s fixture is
 entirely constructed (synthetic rubric text, not real WHO wording), marked
 `;; constructed, not a published spec vector` at its definition. The 22
 chapter boundaries in `icd10.chapters` are structural facts printed in the
@@ -157,7 +157,7 @@ external source this repo would need to cite as a "spec vector" per se.
 
 ```sh
 clojure -M:test                                              # JVM
-nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljs   # ClojureScript
+nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljk   # ClojureScript
 ```
 
 Both runtimes run the identical suite (18 tests / 99 assertions).
