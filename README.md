@@ -156,8 +156,8 @@ external source this repo would need to cite as a "spec vector" per se.
 ## Verify
 
 ```sh
-clojure -M:test                                              # JVM
-nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljk   # ClojureScript
+kbb -M:test                                              # JVM
+kbb --backend sci --classpath "$(kbb -A:cljs -Spath)" scripts/verify-cljs.cljk   # ClojureScript
 ```
 
 Both runtimes run the identical suite (18 tests / 99 assertions).
