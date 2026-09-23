@@ -5,7 +5,7 @@
   individual examples per this repo's licensing boundary, not reproducing
   the classification). This tests the ClaML SCHEMA parser, not WHO
   content -- see README."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [icd10.claml :as claml]))
 
 (def ^:private synthetic-doc
