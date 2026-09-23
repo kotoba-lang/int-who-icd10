@@ -2,7 +2,7 @@
   "Test codes cited here (J18.9, E11.9, A00, Z99, B20, G63.2*, U07.1, ...)
   are individual code SHAPES used as examples of the grammar, not a
   reproduction of the classification -- see README's licensing boundary."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [icd10.code :as code]))
 
 (defn- rt
