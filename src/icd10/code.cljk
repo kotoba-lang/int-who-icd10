@@ -11,7 +11,7 @@
   subcategory character, then the optional dagger/asterisk mark) rather
   than one `re-matches` against a single monolithic pattern: a single
   regex collapses every possible malformation into one generic \"no
-  match\", which is the same failure this workspace's CLAUDE.md calls out
+  match\", which is the same failure this workspace's AGENTS.md calls out
   for `.js`/`.mjs` test harnesses that assert only \"it failed somehow\" --
   a caller (and this repo's own negative tests) can tell a bad LETTER
   apart from a bad DIGIT apart from a too-long SUBCATEGORY, each as its own
