@@ -12,7 +12,7 @@ workspace already has an existing, differently-prefixed entry for
 `who.int` — `kotoba-lang/com-who` — recorded in
 `manifest/origin-domains.edn`; that predates the reverse-DNS derivation
 rule this repo's own name follows and is a known, unrelated legacy naming
-gap, not a reason to rename this repo. See CLAUDE.md's repo-naming
+gap, not a reason to rename this repo. See AGENTS.md's repo-naming
 section: existing deviations are not retroactively fixed, but new
 registrations follow the rule.)
 

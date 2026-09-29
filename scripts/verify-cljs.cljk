@@ -6,7 +6,7 @@
 ;; cljs) that feeds directly into `compare`/sort ordering, and
 ;; icd10.code does per-character classification via `re-matches` against
 ;; 1-character strings on both runtimes -- exactly the surface this
-;; workspace's CLAUDE.md flags as having repeatedly diverged between JVM
+;; workspace's AGENTS.md flags as having repeatedly diverged between JVM
 ;; and ClojureScript in past libraries here.
 ;;
 ;;   kbb --backend sci --classpath "$(kbb -A:cljs -Spath)" scripts/verify-cljs.cljk
